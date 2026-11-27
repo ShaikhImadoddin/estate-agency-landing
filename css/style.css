@@ -435,13 +435,15 @@ img {
 
 /* Property Inquiries Section 1 */
 .inquiries-section,
-.property-section {
+.property-section,
+.expertise-section {
   background-color: #ffffff;
   padding: 64px 20px;
 }
 
 .inquiries-container,
-.property-container {
+.property-container,
+.expertise-container {
   max-width: 1280px;
   margin: 0 auto;
   display: flex;
@@ -538,6 +540,9 @@ img {
   color: #333333;
 }
 
+/* Expertise in action section */
+
+/* Most of things were similar with Property Inquiries Section 2*/
 
 
 /* Responsive Breakpoints */
@@ -726,12 +731,14 @@ img {
   }
 
   .inquiries-section,
-  .property-section {
+  .property-section,
+  .expertise-section{
     padding: 80px 80px;
   }
 
   .inquiries-container,
-  .property-section {
+  .property-container,
+  .expertise-container {
     gap: 64px;
   }
 
