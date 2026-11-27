@@ -44,11 +44,12 @@ estate-agency-landing/
 
 ```Bash
 git clone [https://github.com/ShaikhImadoddin/estate-agency-landing.git](https://github.com/ShaikhImadoddin/estate-agency-landing.git)
+```
 2. Open the project folder:
 
 ```Bash
 cd estate-agency-landing
-
+```
 3. Open index.html directly in your browser or launch it using the Live Server extension in VS Code.
 
 ## Author
