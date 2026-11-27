@@ -446,7 +446,8 @@ img {
 .inquiries-container,
 .property-container,
 .expertise-container,
-.faq-container {
+.faq-container,
+.contact-container {
   max-width: 1280px;
   margin: 0 auto;
   display: flex;
@@ -812,6 +813,54 @@ img {
   color: #706f7b;
 }
 
+/* Contact Form Section */
+.contact-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: #fefefe;
+  padding: 64px 20px;
+}
+
+.contact-section::before,
+.contact-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.24;
+  filter: blur(165px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Ellipse 192 (Left Blue Glow) */
+.contact-section::before {
+  width: 576px;
+  height: 576px;
+  top: 72px;
+  left: -273px;
+  transform: rotate(-140.53deg);
+  background-color: #409aff;
+}
+
+/* Ellipse 193 (Right Peach Glow) */
+.contact-section::after {
+  width: 381.87px;
+  height: 630.4px;
+  top: 17px;
+  right: -120px;
+  transform: rotate(126.03deg);
+  background-color: #ff725e;
+}
+
+.contact-section .section-header {
+  max-width: 752px;
+}
+
+.contact-section .section-header h2 {
+  font-weight: 800;
+}
+
 
 
 /* Responsive Breakpoints */
@@ -1009,7 +1058,8 @@ img {
   .inquiries-container,
   .property-container,
   .expertise-container,
-  .faq-container {
+  .faq-container,
+  .contact-container {
     gap: 64px;
   }
 
@@ -1146,6 +1196,19 @@ img {
   .faq-answer p {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .contact-section {
+    padding: 143px 80px 100px 80px;
+  }
+
+  .contact-section::before {
+    left: calc(50% - 993px);
+  }
+
+  .contact-section::after {
+    right: auto;
+    left: calc(50% + 258px);
   }
 }
 
